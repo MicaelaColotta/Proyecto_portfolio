@@ -1,0 +1,27 @@
+$color_black: rgb(43, 43, 43);
+$color_white: rgb(239, 239, 239);
+$color_pink: rgb(241, 128, 244);
+$color_violet: rgb(78, 26, 109);
+$color_gradient1: rgb(139, 37, 229);
+$color_shadow: rgb(0, 0, 0);
+
+.header2 {
+    background-color: $color_black;
+}
+
+nav ul li a {
+    color: $color_white;
+} 
+
+.texto {
+    color: $color_white;
+}
+
+.text h3 {
+    font-size: 24px;
+    color: $color_white;
+}
+
+h3 {
+    color: $color_pink;
+}
