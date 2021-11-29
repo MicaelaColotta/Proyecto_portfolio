@@ -261,6 +261,16 @@ main {
     color: #efefef; } }
 
 /* Fin card sobre mí */
+/* Padding carrusel home */
+.espacio {
+  padding-bottom: 50px; }
+
+/* Fin padding carrusel home */
+/* Padding footer home */
+.espacio2 {
+  margin-top: 15px; }
+
+/* Fin padding footer home */
 /* formulario */
 .container__div {
   box-sizing: border-box;
