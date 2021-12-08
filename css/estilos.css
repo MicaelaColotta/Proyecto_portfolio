@@ -24,14 +24,6 @@ h3 {
   font-family: 'Montserrat', sans-serif; }
 
 /*Header*/
-.header1 {
-  min-height: 80vh;
-  width: 100%;
-  background-image: url(../imagenes/fondo.jpg);
-  background-position: center;
-  background-size: cover;
-  position: relative; }
-
 .header2 {
   min-height: 10vh;
   width: 100%;
@@ -54,6 +46,18 @@ nav ul li {
   padding: 8px 12px; }
 
 /*Fin header*/
+.hero {
+  background-image: url(../imagenes/fondo.jpg);
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative; }
+
 .texto {
   width: 90%;
   color: #efefef;
@@ -61,8 +65,7 @@ nav ul li {
   top: 50%;
   left: 52%;
   transform: translate(-50%, -50%);
-  text-align: left;
-  margin-top: 50px; }
+  text-align: left; }
   .texto h1 {
     font-size: 76px;
     font-weight: bolder; }
@@ -71,8 +74,7 @@ nav ul li {
       margin: 10px 0 40px; }
 
 .texto p {
-  font-size: 18px;
-  margin: 10px 0 40px; }
+  font-size: 18px; }
 
 /*Hero boton*/
 .hero__boton {
@@ -137,8 +139,7 @@ main {
 
 @media (max-width: 768px) {
   .grid {
-    grid-template-columns: repeat(2, fr);
-    margin-left: 25%; } }
+    grid-template-columns: repeat(2, fr); } }
 
 @media (max-width: 500px) {
   .grid {
@@ -176,18 +177,20 @@ main {
 
 /* Galería de imágenes */
 .gallery__container {
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  width: 100vw;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 2em;
-  row-gap: 2em;
-  padding: 120px; }
+  grid-template-columns: repeat(auto-fill, minmax(300px, 300px));
+  column-gap: 20px;
+  row-gap: 20px; }
 
 .gallery__img {
-  width: 100%; }
-
-@media (max-width: 768px) {
-  .gallery__container {
-    grid-template-columns: repeat(1, fr); } }
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  object-position: center; }
 
 /* Fin galería de imágenes */
 /* Card sobre mí */
