@@ -184,7 +184,9 @@ main {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 300px));
   column-gap: 20px;
-  row-gap: 20px; }
+  row-gap: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px; }
 
 .gallery__img {
   width: 300px;
@@ -207,12 +209,12 @@ main {
   height: auto;
   background: #f3f3f3;
   border-radius: 25px;
-  box-shadow: 2px 2px 30px 0px black; }
+  box-shadow: 2px 2px 30px 0px #a7a7a7; }
 
 .fotomica {
   background-image: url(../imagenes/fondo.jpg);
   border-radius: 25px;
-  box-shadow: 0px 0px 15px 0px black; }
+  box-shadow: 0px 0px 15px 0px #8a8a8a; }
 
 .fotomica {
   padding: 10px;
