@@ -115,7 +115,7 @@ main {
 .grid > article {
   background: linear-gradient(to left, #8b25e5, #f181f4);
   border: none;
-  box-shadow: 2px 2px 6px 0px black;
+  box-shadow: 2px 2px 6px 0px #a0a0a0;
   border-radius: 50px;
   text-align: center;
   width: 250px;
@@ -123,7 +123,7 @@ main {
 
 .grid > article:hover {
   transform: translateY(5px);
-  box-shadow: 2px 2px 30px 0px black; }
+  box-shadow: 2px 2px 30px 0px #a5a5a5; }
 
 .grid > article img {
   width: 100%;
@@ -139,7 +139,7 @@ main {
 
 @media (max-width: 768px) {
   .grid {
-    grid-template-columns: repeat(2, fr); } }
+    grid-template-columns: repeat(2, 1fr); } }
 
 @media (max-width: 500px) {
   .grid {
@@ -273,7 +273,8 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh; }
+  height: 100vh;
+  padding: 30px; }
 
 .container__div {
   max-width: 700px;
@@ -316,4 +317,3 @@ form .detalles-usuario .input-box {
   font-size: 22px; }
 
 /* Fin formulario */
-/* npm run watch-css */
